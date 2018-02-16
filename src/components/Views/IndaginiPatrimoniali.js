@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 
-class App extends Component {
+
+class Indagini extends Component {
     render(){
         return(
             <div>
-                <h1>Ricerca Partita Iva</h1>
-                <div></div>
+               indagini
             </div>
         )
     }
 }
 
-export default App;
+export default Indagini;

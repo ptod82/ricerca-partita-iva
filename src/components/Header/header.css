@@ -1,0 +1,117 @@
+.header{
+    z-index: 999;
+    border-bottom: 1px solid #264178;
+    height: 55px;
+    display: block;
+}
+.header #menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 13px 10px;
+    cursor: pointer;
+}
+
+.header #logo {
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    font-size: 0;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    background-image: url('../../img/logo_ricerca_partita_iva.svg');
+    width: 32px;
+    height: 32px;
+}
+
+.header form {
+    padding: 0;
+}
+.header input::-webkit-search-decoration,
+.header input::-webkit-search-cancel-button {
+    display: none;
+}
+.header input[type=submit] {
+    position:absolute;
+    top:10px;
+    right:8px;
+    background-color: #ffc100;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../img/ico-search.png');
+    height: 33px;
+    width: 36px;
+    -webkit-appearance: none;
+    border: 1px solid #cccccc;
+    border-radius: 0;
+    -moz-border-top-right-radius: 4px;
+    -moz-border-bottom-right-radius: 4px;
+    -webkit-border-top-right-radius: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.header input[type=search], .header input[type=text] {
+    position: absolute;
+    top: 10px;
+    right: 24px;
+    background: #f1f1f1 ;
+    border: 1px solid #cccccc;
+    padding: 0 8px;
+    width: 30vw;
+    height: 33px;
+    font-family: inherit;
+    font-size: 100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    border-radius: 0;
+    -moz-border-top-left-radius: 4px;
+    -moz-border-bottom-left-radius: 4px;
+    -webkit-border-top-left-radius: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    -webkit-transition: all .9s;
+    -moz-transition: all .9s;
+    transition: all .9s ease;
+}
+.header input[type=search]:focus, .header input[type=text]:focus {
+    box-sizing: border-box;
+    width: 50vw;
+    max-width: 700px;
+    height: 33px;
+    background-color: #fff;
+    border-color: #eb407a;
+    -webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+    -moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+    box-shadow: 0 0 5px rgba(109,207,246,.5);
+    outline:none;
+}
+.header input:-moz-placeholder,
+.header input::-webkit-input-placeholder {
+    color: #999;
+}
+.header input:focus + #logo {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 0.7s, opacity 0.7s ease;
+}
+.header input + #logo {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 1.5s ease;
+}
+
+@media (min-width: 750px) {
+    .header #menu {
+        left: 16px;
+    }
+    .header input[type=text] {
+        right: 34px;
+    }
+    .header input[type=submit]{
+        right: 18px;
+    }
+}
