@@ -1,0 +1,73 @@
+.hero-page{
+    display: block;
+    background-image: url('../../img/small/home-hero.JPG');
+    background-position: top center;
+    width: 100%;
+    height: 35vh;
+    background-size: cover;
+}
+
+.searchHome {
+
+}
+
+.home-cnt{
+    background: url('../../img/small/imprese.jpg') right 20px no-repeat;
+    height: 150px;
+    width: auto;
+    padding: 20px 15px;
+    color: #264178;
+    display: block;
+    border-top: 1px solid #264178;
+    border-bottom: 1px solid #264178;
+}
+
+.home-cnt h1{
+    font-size: 2rem;
+}
+
+.home-cnt p{
+    display: block;
+    font-size: 16px;
+    line-height: 23px;
+    margin-top: 20px;
+}
+
+.home-links{
+    background-color: #264178;
+    display: block;
+    padding: 20px;
+    overflow: auto;
+}
+
+.home-links ul{
+    margin: 0 auto;
+}
+
+.home-links li{
+     width: 47%;
+     display: inline-block;
+    margin: 7px 0;
+}
+
+.home-links li:nth-child(odd){
+    width: 53%;
+}
+
+
+.home-links li:before {
+    content: '';
+    display: inline-block;
+    background-color: transparent;
+    width: 4px;
+    height: 4px;
+    border: 3px solid #ffbf00;
+    border-radius: 2px;
+    margin-right: 5px;
+}
+
+.home-links a{
+    color: #ffffff;
+    text-align: left;
+    text-decoration: none;
+}

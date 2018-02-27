@@ -1,0 +1,35 @@
+footer > div{
+    display: block;
+    height: 50px;
+    padding: 20px 10px;
+    margin: 20px 0;
+    line-height: 20px;
+    font-size: 11px;
+}
+
+footer > div .logo-t{
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    float: left;
+}
+
+footer > div span{
+    float: left;
+    line-height: 35px;
+    margin-left: 10px;
+}
+
+.info-camere{
+    color: #25589c;
+    float: right;
+}
+
+.info-camere > div{
+    display: block;
+}
+
+.info-camere > img{
+    margin-top: -5px;
+    display: inline-block;
+}
